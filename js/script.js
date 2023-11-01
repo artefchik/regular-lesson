@@ -15,3 +15,10 @@ function task3(string) {
     const result = reg.test(string) ? 'строка существует ' : 'строка  НЕ существует ';
     return result;
 }
+
+function task4(string) {
+    const reg = /^([a-zA-z])([a-zA-Z]{10,})$/g
+    const result = reg.test(string) ? 'строка существует' : 'строка  НЕ существует';
+    return result;
+}
+// console.log(task4('ufrhufrjfughu9'));
