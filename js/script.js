@@ -9,3 +9,9 @@ function task2() {
     const reg = /^[a-zA-z_$][0-9a-zA-z_$]*$/g;
     reg.test(variableName) ? console.log('название переменной корректно') : console.log('название переменной НЕ  корректно');
 }
+
+function task3(string) {
+    const reg = /^[a-zA-ZА-Яа-я0-9]+$/g;
+    const result = reg.test(string) ? 'строка существует ' : 'строка  НЕ существует ';
+    return result;
+}
